@@ -1,11 +1,10 @@
-package com.example.service;
+package com.fiberhome.service;
 
-import com.example.mapper.BookDao;
-import com.example.entity.Book;
+import com.fiberhome.mapper.BookDao;
+import com.fiberhome.entity.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -17,12 +16,12 @@ public class BookServiceImp implements BookService{
     private BookDao bookDao;
 
     @Override
-    public Book findone(String name) {
-        return bookDao.findByName(name);
+    public List<Book> findone(String name) {
+        return null;
     }
 
     @Override
     public List<Book> findAll(Integer one) {
-        return bookDao.randomlist(one);
+        return null;
     }
 }

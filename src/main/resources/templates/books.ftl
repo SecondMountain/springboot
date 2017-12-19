@@ -10,9 +10,9 @@
     <#--books is list-->
 <#--</#if>-->
 <#list books as book>
-${book.id}
-${book.name}
-${book.author}
+    ${book.id}
+    ${book.name}
+    ${book.author}
 </#list>
 </body>
 </html>
